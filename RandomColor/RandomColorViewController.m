@@ -18,6 +18,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    srand48(time(0));
+    double red = drand48();
+    double green = drand48();
+    double blue = drand48();
+    self.view.backgroundColor = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:1.0];
 }
 
 - (void)didReceiveMemoryWarning
