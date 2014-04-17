@@ -31,11 +31,19 @@
                                     <action selector="changeColor:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="k3X-YI-j2p"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYJ-as-45v">
+                                <rect key="frame" x="20" y="58" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="button" destination="1u3-sm-mNf" id="MJs-gQ-cT1"/>
+                        <outlet property="rgb" destination="NYJ-as-45v" id="CvJ-eC-3sh"/>
                         <outlet property="subView" destination="pCx-it-kGc" id="xW6-V5-cUI"/>
                     </connections>
                 </viewController>

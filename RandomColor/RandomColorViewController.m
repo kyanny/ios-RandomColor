@@ -37,5 +37,7 @@
     double green = drand48();
     double blue = drand48();
     self.subView.backgroundColor = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:1.0];
+    NSString *rgb = [NSString stringWithFormat:@"rgb(%f,%f,%f)", red, green, blue];
+    self.rgb.text = rgb;
 }
 @end

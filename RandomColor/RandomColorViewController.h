@@ -11,6 +11,7 @@
 @interface RandomColorViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIView *subView;
 @property (weak, nonatomic) IBOutlet UIButton *button;
+@property (weak, nonatomic) IBOutlet UILabel *rgb;
 
 - (IBAction)changeColor:(id)sender;
 @end
