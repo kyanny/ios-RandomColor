@@ -22,7 +22,7 @@
     double red = drand48();
     double green = drand48();
     double blue = drand48();
-    self.view.backgroundColor = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:1.0];
+    self.subView.backgroundColor = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:1.0];
 }
 
 - (void)didReceiveMemoryWarning
@@ -31,4 +31,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)changeColor:(id)sender {
+    srand48(time(0));
+    double red = drand48();
+    double green = drand48();
+    double blue = drand48();
+    self.subView.backgroundColor = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:1.0];
+}
 @end
